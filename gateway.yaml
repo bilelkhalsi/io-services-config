@@ -11,12 +11,12 @@ spring:
             - Path=/users/**
           filters:
             - RewritePath=/users(?<segment>/?.*), $\{segment}
-        - id: courses
-          uri: http://localhost:9004
+        - id: backlog
+          uri: http://localhost:9005
           predicates:
-            - Path=/courses/**
+            - Path=/backlog/**
           filters:
-            - RewritePath=/courses(?<segment>/?.*), $\{segment}
+            - RewritePath=/backlog(?<segment>/?.*), $\{segment}
 
 springdoc:
   api-docs:
