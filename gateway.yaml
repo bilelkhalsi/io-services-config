@@ -31,11 +31,11 @@ springdoc:
     urls:
       - name: users
         url: /users/v3/api-docs/
-      - name: courses
-        url: /courses/v3/api-docs/
+      - name: backlog
+        url: /backlog/v3/api-docs/
   show-actuator: false
   group-configs:
-    - group: courses
-      paths-to-match: /courses/**
+    - group: backlog
+      paths-to-match: /backlog/**
     - group: users
       paths-to-match: /users/**
