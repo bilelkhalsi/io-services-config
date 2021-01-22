@@ -11,9 +11,13 @@ server:
 spring:
 
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/iozone
+    url: r2dbc:postgresql://localhost:5433/iozone
     username: iozone
     password: iozone
+    pool:
+      enabled: true
+      max-life-time: PT30M # 15 minutes
+      validation-query: select 1;
 
   jackson:
     serialization:
